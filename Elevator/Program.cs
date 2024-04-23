@@ -43,7 +43,7 @@ namespace Elevator
 		public void EmulatePressingButtons(ref Elevator elevator)
 		{
 			Thread.Sleep(3000);
-			Random randomButtonPress = new Random(1);
+			Random randomButtonPress = new Random();
 			int randomButton = randomButtonPress.Next(1, 100);
 			
 			int randomFloor = randomButton % 5;
